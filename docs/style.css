@@ -93,7 +93,7 @@ h3 {
 h1 {
     font-size: 58px;
     letter-spacing: 0.05em;
-    color: #EAEEE7;
+    color: #BAC9B0;
     padding-bottom: 20px;
 }
 
@@ -101,15 +101,15 @@ h2 {
     font-size: 44px;
     line-height: 48px;
     letter-spacing: 0.05em;
-    color:#252429;
+    color:#474539;
     padding-bottom: 20px;
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 32px;
     line-height: 38px;
     letter-spacing: 0.05em;
-    color:#252429;
+    color: #768376;
     padding-bottom: 20px;
 }
 
@@ -151,18 +151,25 @@ p {
 }
 
 .regular-button {
-    width: 160px;
+    /* width: 240px; */
     height: 40px;
     background-color: #252429;
-    font-size: 22px;
+    font-size: 18px;
     text-align: center;
     color: #EAEEE7;
     border: 3px solid #EAEEE7;
-    border-radius: 6px;
+    border-radius: 8px;
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 0.08em;
     margin: 20px 0;
+    padding: 0 25px;
+}
+
+.regular-button:hover {
+    background-color: #EAEEE7;
+    color: #252429;
+    border: 1px solid #EAEEE7;
 }
 
 .large-button {
@@ -322,8 +329,11 @@ main {
 }
 
 #support h3 {
-    padding: 50px 0 20px 0;
+    padding: 50px 0 10px 0;
+}
 
+#support article .p-small {
+    padding-bottom: 20px;
 }
 
 #support article div {
@@ -339,6 +349,69 @@ main {
     margin: 10px 0;
 }
 
-#support button .regular-button {
-
+#support button.regular-button {
+    margin-top: 20px;
 }
+
+/* Contact */
+
+#contact {
+    position: relative;
+}
+
+#contact article {
+    height: 100vh;
+}
+
+#contact .form-wrapper {
+    height: 60vh;
+    margin: 0 auto;
+    width: 600px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    text-align: left;
+    font-size: 14px;
+    line-height: 18px;
+    color: #474539;
+}
+
+#contact form input {
+    background-color: #EAEEE7;
+    border: 1px solid #768376;
+    border-radius: 3px;
+    height: 40px;
+    width: 400px;
+    padding-left: 15px;
+}
+
+#contact iframe {
+    height: 40vh;
+    width: 100%;
+}
+.mapouter {
+    position: absolute;
+    bottom: 0;
+    text-align: right;
+    height: 40vh;
+    width: 100vw;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none!important;
+    height: 40vh;
+    width: 100vw;
+}
+
