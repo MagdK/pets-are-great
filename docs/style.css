@@ -65,16 +65,17 @@ body {
 section {
     width: 100%;
     height: 100vh;
-    background-color: #EAEEE7;
 }
 
 section:nth-child(odd) {
     background-color: #CFE0D0;
 }
 
-header, 
-main,
-footer {
+section:nth-child(even) {
+    background-color: #EAEEE7;
+}
+
+header {
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -86,6 +87,7 @@ h1,
 h2,
 h3 {
     font-family: 'Philosopher', sans-serif;
+    text-align: center;
 }
 
 h1 {
@@ -118,6 +120,14 @@ p {
     letter-spacing: 0.04em;
 }
 
+.p-small {
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 18px;
+    color: #474539;
+    text-align: center;
+}
+
 
 /* BUTTONS */
 
@@ -140,6 +150,21 @@ p {
     border: 1px solid #BC2F3A;
 }
 
+.regular-button {
+    width: 160px;
+    height: 40px;
+    background-color: #252429;
+    font-size: 22px;
+    text-align: center;
+    color: #EAEEE7;
+    border: 3px solid #EAEEE7;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 0.08em;
+    margin: 20px 0;
+}
+
 .large-button {
     width: 240px;
     height: 50px;
@@ -159,6 +184,14 @@ p {
     background-color: #EAEEE7;
     color: #252429;
     border: 3px solid #252429;
+}
+
+.payment-button {
+    background-color: transparent;
+    border: 1px solid #BAC9B0;
+    border-radius: 3px;
+    width: 100px;
+    margin: 10px;
 }
 
 /* HEADER */
@@ -212,6 +245,14 @@ article.navigation-menu:last-child {
     margin-right: 130px;
 }
 
+/* Main */
+
+main {
+    margin: 0 auto;
+}
+
+/* Welcome */
+
 #welcome {
     max-height: 100vh;
     background-color: transparent;
@@ -245,6 +286,7 @@ article.navigation-menu:last-child {
 
 #about {
     position: relative;
+    width: 100%;
 }
 
 #about article {
@@ -269,6 +311,7 @@ article.navigation-menu:last-child {
 
 #support {
     position: relative;
+    width: 100%;
 }
 
 #support article {
@@ -276,4 +319,26 @@ article.navigation-menu:last-child {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+#support h3 {
+    padding: 50px 0 20px 0;
+
+}
+
+#support article div {
+    text-align: center;
+}
+
+#support button .payment-button {
+    display: inline-block;
+}
+
+#support button img {
+    height: 20px;
+    margin: 10px 0;
+}
+
+#support button .regular-button {
+
 }
