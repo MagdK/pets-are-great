@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	background: transparent;
+	font-family: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+button,
+a {
+	cursor: pointer;
+	color: inherit;
+}  
+
+textarea {
+	resize: none;
+}
+
+button,
+textarea,
+select {
+	appearance: none !important;
+	border-radius: 0;
+}
+
+/* RESET OVER */
+
+/* COLORS
+
+Red: #BC2F3A
+Black: #252429
+
+Green 1: #EAEEE7
+Green 2: #CFE0D0
+Green 3: #BAC9B0
+Green 4: #8FA08E
+Green 5: #768376
+Green 6: #474539
+*/
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+h1, 
+h2,
+h3 {
+    font-family: 'Ultra', serif;
+}
