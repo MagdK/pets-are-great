@@ -37,7 +37,7 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
 /* RESET OVER */
 
@@ -46,6 +46,7 @@ ul {
 Red: #BC2F3A
 Black: #252429
 
+Green 0: #f7f9f6
 Green 1: #EAEEE7
 Green 2: #CFE0D0
 Green 3: #BAC9B0
@@ -53,6 +54,7 @@ Green 4: #8FA08E
 Green 5: #768376
 Green 6: #474539
 */
+
 html {
 	scroll-behavior: smooth;
 }
@@ -72,7 +74,7 @@ section:nth-child(odd) {
 }
 
 section:nth-child(even) {
-    background-color: #EAEEE7;
+    background-color: #f7f9f6;
 }
 
 header {
@@ -154,34 +156,35 @@ p {
     /* width: 240px; */
     height: 40px;
     background-color: #252429;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     color: #EAEEE7;
-    border: 3px solid #EAEEE7;
+    border: 2px solid #EAEEE7;
     border-radius: 8px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: 200;
-    letter-spacing: 0.08em;
-    margin: 20px 0;
+    letter-spacing: 0.07em;
     padding: 0 25px;
 }
 
 .regular-button:hover {
     background-color: #EAEEE7;
     color: #252429;
-    border: 1px solid #EAEEE7;
+    border: 2px solid #252429;
+    font-weight: 600;
+    letter-spacing: 0.08em;
 }
 
 .large-button {
     width: 240px;
     height: 50px;
-    background-color: #474539;
-    font-size: 22px;
+    background-color: #252429;
+    font-size: 20px;
     text-align: center;
     color: #EAEEE7;
-    border: 3px solid #EAEEE7;
-    border-radius: 6px;
-    text-transform: uppercase;
+    border: 2px solid #EAEEE7;
+    border-radius: 4px;
+    /* text-transform: uppercase; */
     font-weight: 200;
     letter-spacing: 0.08em;
     margin: 20px 0;
@@ -190,7 +193,7 @@ p {
 .large-button:hover {
     background-color: #EAEEE7;
     color: #252429;
-    border: 3px solid #252429;
+    border: 2px solid #252429;
 }
 
 .payment-button {
@@ -356,7 +359,7 @@ main {
 /* Contact */
 
 #contact {
-    position: relative;
+    /* position: relative; */
 }
 
 #contact article {
@@ -364,22 +367,31 @@ main {
 }
 
 #contact .form-wrapper {
+    position: relative;
     height: 60vh;
     margin: 0 auto;
     width: 600px;
-    text-align: center;
 }
 
-#contact form {
-    max-width: 600px;
-    margin: 0 auto;
+#contact .map-wrapper {
+    height: 40vh;
+    margin: o auto;
+    width: 100%;
+}
+
+#contact .form {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
 }
 
 #contact form label {
     text-align: left;
     font-size: 14px;
-    line-height: 18px;
+    line-height: 28px;
     color: #474539;
+    margin-left: 10px;
 }
 
 #contact form input {
@@ -389,26 +401,39 @@ main {
     height: 40px;
     width: 400px;
     padding-left: 15px;
+    color: #474539;
+    text-align: left;
 }
+
+#contact form textarea {
+    background-color: #EAEEE7;
+    border: 1px solid #768376;
+    border-radius: 3px;
+    height: 150px;
+    width: 400px;
+    padding-left: 15px;
+    line-height: 24px;
+    color: #474539;
+    text-align: left;
+}
+
+#contact .form-wrapper .textalign-right {
+   text-align: right;
+}
+
+/* Google maps */
 
 #contact iframe {
     height: 40vh;
     width: 100%;
 }
-.mapouter {
-    position: absolute;
-    bottom: 0;
-    text-align: right;
-    height: 40vh;
-    width: 100vw;
-}
 
-.gmap_canvas {
+#contact .gmap_canvas {
     overflow: hidden;
     background: none!important;
 }
 
-.gmap_canvas {
+#contact .gmap_canvas {
     overflow: hidden;
     background: none!important;
     height: 40vh;
